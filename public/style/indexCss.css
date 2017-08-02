@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+body{
+    position: relative;
+}
+.nav-position{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    opacity: 0.8;
+}
+#selectInfo{
+    margin-left: 45%;
+}
+.item-container{
+    position: relative;
+}
+.image-text{
+    z-index: 100;
+    width: 80%;
+    position: absolute;
+    top: 70px;
+    left: 180px;
+    background-color: inherit;
+    color: wheat;
+}
+.row-box-container{
+    padding-top: 30px;
+    padding-left: 50px;
+}
+.row-box{
+    text-align: center;
+    width: 300px;
+    float: left;
+    margin-right: 5px;
+}
+.row-box-body{
+    width: auto;
+}
+
+#nav{
+    background:#252525;/*背景颜色*/
+    position: fixed;
+    top: 50px;
+    z-index: 90;
+    opacity: 0.9;
+    width: 175px;
+}
+#nav .logo{
+    height:52px;/*高度*/
+    text-align:center;/*文本对齐方式*/
+    padding:8px 0;/*上下 左右*/
+}
+#nav ul{
+    margin-bottom: 0;!important;
+}
+#nav ul li{/*height:45px;*//*border:1px solid red;*/
+    font-family:"微软雅黑";/*文字类型*/
+    color:#fff;/*文字颜色*/
+    line-height:45px;/*行高  垂直居中*/
+    border-top:1px solid #424242;/*上边框*/
+    border-bottom:1px solid #000;/*下边框*/
+    cursor:pointer;/*鼠标指针*/
+    text-align: center;
+}
+#nav ul li span.title{
+    font-size:14px;/*文字大小*/
+}
+
+#nav ul li .hover{
+    font-size:12px;/*文字大小*/
+    display:none;/*隐藏*/
+}
+#nav ul li .hover p{
+    background:#2f3437;
+    border-top:1px solid #3f4041;/*边框 粗细 风格 颜色*/
+    line-height:35px;
+    margin-bottom: 0!important;
+}
+#nav ul li .hover p a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+/*#nav ul li .first{display:block;*//*显示*//*}*/
+#nav ul li.curr{
+    background:#5580fb;
+}
+#carouselstyle{
+    height: 400px;
+    margin-top: 51px;
+}
+#movieAllInfo{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}

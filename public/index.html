@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style/bootstrap-3.3.7-dist/css/bootstrap.css">
+        <script src="style/bootstrap-3.3.7-dist/js/jquery-3.2.1.js"></script>
+        <script src="style/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="style/indexCss.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="script/indexJs.js"></script>
+    </head>
+    <body>
+        <!--write your code here-->
+        <nav class="navbar navbar-default navbar-inverse nav-position">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">我觉得还ok影院</a>
+                    <a class="navbar-brand" id="movieGenre"><span class="glyphicon glyphicon-th-list"></span></a>
+                    <a class="navbar-brand" id="moveMovieGenre" style="display: none"><span class="glyphicon glyphicon-remove"></span></a>
+                </div>
+
+                <!-- Collehttp://localhost:63342/tw-movie-theater/index.html?_ijt=cks2oif4mvfv8ndu95je22dj1nct the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <form id="selectInfo" class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input id="movie_name" type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default" onclick="movie_search()">Submit</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于我们 <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>  <!--导航栏-->
+
+
+        <div id="nav" style="display: none">
+            <ul>
+                <li>
+                    <span class="title">犯罪/历史&nbsp;&nbsp;&nbsp;</span><sub class="glyphicon glyphicon-sort-by-attributes"></sub>
+                    <div class="hover first" style="display: block">
+                        <p><a now="20" href="">战争</a></p>
+                        <p><a now="21" href="">犯罪</a></p>
+                        <p><a now="22" href="">西部</a></p>
+                        <p><a now="26" href="">武侠</a></p>
+                    </div>
+                </li>
+                <li>
+                    <span class="title">魔幻/科幻&nbsp;&nbsp;&nbsp;</span><sub class="glyphicon glyphicon-sort-by-attributes"></sub>
+                    <div class="hover">
+                        <p><a now="5" href="">科幻</a></p>
+                        <p><a now="23" href="">奇幻</a></p>
+                        <p><a now="24" href="">冒险</a></p>
+                        <p><a now="25" href="">灾难</a></p>
+                    </div>
+                </li>
+                <li>
+                    <span class="title">惊悚/灵异&nbsp;&nbsp;&nbsp;</span><sub class="glyphicon glyphicon-sort-by-attributes"></sub>
+                    <div class="hover">
+                        <p><a now="7" href="">悬疑</a></p>
+                        <p><a now="8" href="">惊悚</a></p>
+                        <p><a now="9" href="">恐怖</a></p>
+                        <p><a now="29" href="">黑色电影</a></p>
+                    </div>
+                </li>
+                <li>
+                    <span class="title">都市/情感&nbsp;&nbsp;&nbsp;</span><sub class="glyphicon glyphicon-sort-by-attributes"></sub>
+                    <div class="hover">
+                        <p><a now="2" href="">喜剧</a></p>
+                        <p><a now="4" href="">爱情</a></p>
+                        <p><a now="16" href="">家庭</a></p>
+                        <p><a now="15" href="">歌舞</a></p>
+                    </div>
+                </li>
+                <li>
+                    <span class="title">小电影&nbsp;&nbsp;&nbsp;</span><sub class="glyphicon glyphicon-sort-by-attributes"></sub>
+                    <div class="hover">
+                        <p><a now="12" href="">情色</a></p>
+                        <p><a now="13" href="">同性</a></p>
+                        <p><a now="1" href="">剧情</a></p>
+                        <p><a now="11" href="">短片</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div> <!--分类-->
+
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- 轮播（Carousel）项目 -->
+            <div id="carouselstyle" class="carousel-inner">
+                <div class="item active item-container">
+                    <img src="style/img/001.jpg" alt="First slide" style="width: 100%;height: 400px;filter: blur(2px);">
+                    <div class="jumbotron image-text">
+                        <h1>Another example headline.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="style/img/002.jpg" alt="Second slide" style="width: 100%;height: 400px;filter: blur(2px)">
+                    <div class="jumbotron image-text">
+                        <h1>Another example headline.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="style/img/004.jpg" alt="Third slide" style="width: 100%;height: 400px;filter: blur(2px)">
+                    <div class="jumbotron image-text">
+                        <h1>Another example headline.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="icon-prev" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="icon-next" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div> <!--轮播-->
+
+        <ul id="movieAllInfo"></ul>
+    </body>
+</html>

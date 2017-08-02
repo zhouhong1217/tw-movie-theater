@@ -1,0 +1,23 @@
+img {
+    width: 90%;
+    height: 90%;
+}
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: 210px;
+    width: 148px;
+}
+#movieInfo p {
+    font-size : 15px;
+    font-weight: 700;
+}
+#movieInfo span {
+    color : #9d9d9d;
+    width : 60px;
+    text-align: left;
+    display:inline-block;
+}
+#movieIntroduction p {
+    text-indent: 2em;
+}
